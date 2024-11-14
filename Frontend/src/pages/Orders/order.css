@@ -1,0 +1,43 @@
+.my-order{
+ 
+    margin:50px 0px;
+}
+
+.my-order .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.my-orderr-order{
+    display:grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: cornflowerblue;
+    border: 1px solid tomato;
+}
+
+.my-orderr-order button{
+    border:none;
+    padding: 12px 0px;
+    border-radius: 4px;
+    background-color: aqua;
+    cursor: pointer;
+    color: darkslategrey;
+}
+
+@media (max-width:900px){
+    .my-orderr-order{
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 5px;
+        font-size: 12px;
+
+    }
+   .my-orderr-order botton{
+    font-size: 10px;
+   }
+}
