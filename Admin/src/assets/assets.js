@@ -20,6 +20,8 @@ import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 
+
+export const url='http://localhost:4000'
 export const assets = {
     logo,
     basket_icon,

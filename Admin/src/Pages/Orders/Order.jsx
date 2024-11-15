@@ -4,6 +4,7 @@ import {useState,useEffect} from 'react';
 import axios from 'axios';
 import { assets } from '../../assets/assets';
 import './Order.css'
+import {url} from '../../assets/assets';
 
 
 const Order = () => {
@@ -11,7 +12,7 @@ const Order = () => {
   const [order,setOrder]=useState([]);
 
   const fetchAllorder=async()=>{
-    const response= await axios.get(`http://localhost:4000/api/order/list`);
+    const response= await axios.get(`${url}/api/order/list`);
       if(response.data.success){
         setOrder(response.data.data);
         console.log(response.data.data);
