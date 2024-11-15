@@ -4,7 +4,7 @@ import userModel from "../models/userModel.js";
 
 export const placeOrder=async(req,res)=>{
 
-    const frontend_url="http://localhost:5173"
+    const frontend_url="https://fooddeliveryappreactjs-1.onrender.com"
 
     try{
 
